@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Baillot Edouard](https://up.htmlacademy.ru/htmlcss/29/user/1531333).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).  
 
 ---
 
