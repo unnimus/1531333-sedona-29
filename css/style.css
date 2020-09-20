@@ -9,7 +9,7 @@
   --special-hard: #503E33;
   --double-low-black: #EEEEEE;
   --footer: rgba(255, 255, 255, 0.9);
-  --specail-bum: rgba(0, 0, 0, 0.3);
+  --special-bum: rgba(0, 0, 0, 0.3);
   --blue-focus: #669EC0;
   --basic-gray: #666666;
   --blue-raw-focus: #5496BD;
@@ -57,13 +57,13 @@ img {
   list-style: none;
 }
 
-.site-navigation:active {
-  background-color: var(--specail-bum);
-}
 
-.site-navigation:hover,
-.site-navigation:focus {
-  background-color: var(--light-blue);
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--light-blue);
+}
+.site-navigation a:active {
+  color: var(--special-bum);
 }
 
 /*Description*/
