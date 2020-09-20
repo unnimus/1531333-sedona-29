@@ -5,10 +5,14 @@
   --basic-white: #ffffff;
   --light-blue: #81B3D2;
   --special: #766357;
+  --special-low: #604E43;
+  --special-hard: #503E33;
   --double-low-black: #EEEEEE;
   --footer: rgba(255, 255, 255, 0.9);
+  --specail-bum: rgba(0, 0, 0, 0.3);
   --blue-focus: #669EC0;
   --basic-gray: #666666;
+  --blue-raw-focus: #5496BD;
 }
 
 /* Global */
@@ -18,13 +22,14 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.8;
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
   /*  background-image: url("../img/bg.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 img {
@@ -35,7 +40,7 @@ img {
 /*Navigation*/
 .main-navigation {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.8;
   text-align: center;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -45,35 +50,38 @@ img {
 
 .main-navigation a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 .site-navigation {
   list-style: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus background-color: var(--light blue);
+.site-navigation:active {
+  background-color: var(--specail-bum);
+}
+
+.site-navigation:hover,
+.site-navigation:focus {
+  background-color: var(--light-blue);
 }
 
 /*Description*/
-
 .main-description {
   background-color: var(--basic-white);
 }
 
 .description {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.2;
   text-align: center;
-  text-transform: uppercase;
   color: var(--basic-black);
 }
 
 .motivs {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.8;
   text-align: center;
-  text-transform: uppercase;
   color: var(--low-black);
 }
 
@@ -87,7 +95,7 @@ img {
 
 .real-sity {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1;
   text-align: center;
   color: var(--basic-white);
 }
@@ -98,8 +106,7 @@ img {
 
 .description-presentation {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
   text-align: center;
   color: var(--basic-white);
 }
@@ -110,15 +117,13 @@ img {
 
 .commun-title {
   font-size: 21px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1;
   text-align: center;
 }
 
 .item-production {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
   text-align: center;
   color: var(--low-black);
 }
@@ -129,15 +134,14 @@ img {
 
 .bridge-of-devil {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1;
   text-align: center;
   color: var(--basic-white);
 }
 
 .description-bridge-of-devil {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
   text-align: center;
   color: var(--basic-white);
 }
@@ -148,16 +152,14 @@ img {
 
 .commun-advantage {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
   text-align: center;
   color: var(--low-black);
 }
 
 .date-select-item {
   font-size: 30px;
-  line-height: 24px;
-  text-transform: uppercase;
+  line-height: 0.8;
   text-align: center;
 }
 
@@ -168,13 +170,11 @@ img {
 .hashtag {
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
 .contacts-phone a {
   font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
+  line-height: 1.2;
   text-decoration: none;
   color: inherit;
 }
@@ -187,12 +187,12 @@ img {
 .social-list {
   list-style: none;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
 }
 
 .social-icon {
-  color: var(--light-blue);
+  color: var(--basic-black);
+  text-decoration: none;
 }
 
 .social-button:hover,
@@ -202,61 +202,71 @@ img {
 
 .site-by {
   font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
+  line-height: 1.8;
   text-align: right;
 }
 
 .search-result {
   font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .search-result-list {
   font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .search-result-item {
   font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
+  line-height: 1.5;
   text-decoration: none;
   list-style: none;
 }
 
 .main-hotels {
   font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .main-hotels-price {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.More:hover,
+.More:focus {
+  background-color: var(--blue-focus);
+}
+
+.More:active {
+  background-color: var(--blue-raw-focus);
 }
 
 .More {
-  background-color: var(--light-blue)
+  background-color: var(--light-blue);
 }
 
 .Reserve {
   background-color: var(--special);
 }
 
+.Reserve:hover,
+.Reserve:focus {
+  background-color: var(--special-low);
+}
+
+.Reserve:active {
+  background-color: var(--special-hard);
+}
+
 .button-clic {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
   color: var(--basic-white);
 }
 
 .main-hotels-rating {
   font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  line-height: 1.5;
   color: var(--basic-gray);
 }
