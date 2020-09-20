@@ -1,83 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Гостиницы</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Гостиницы</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&subset=latin,cyrillic;display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  <header>
-
-    <nav>
-      <a>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="header-logo">
         <img src="#" width="368" height="153" alt="Лого Седоны">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
-
   </header>
 
-  <main>
-<section>
-  <h3>Найдено: 3</h3>
-  <h4>Сортировка:</h4>
-  <ul>
-    <li>По цене</li>
-    <li>По типу</li>
-    <li>По рейтингу</li>
-  </ul>
-</section>
-<section>
-  <h3>Список гостиниц</h3>
-  <ul>
-    <li><img src="#" alt="Фото гостиницы Amara Resort">Amara Resort & Spa
-      <p>Гостиница от 4000 Р.</p>
-      <button name="More">Подробнее</button> <button name="Reserve">Забронировать</button>
-      <p>Рейтинг: 8,5</p>
-    </li>
-    <li><img src="#" alt="Фото мотеля Desert Quail Inn">Desert Quail Inn
-      <p>Мотель от 3000 Р.</p>
-      <button name="More">Подробнее</button> <button name="Reserve">Забронировать</button>
-      <p>Рейтинг: 8,9</p></li>
-    <li><img src="#" alt="Фото апартаментов Villas at Poco Diablo">Villas at Poco Diablo
-      <p>Апартаменты от 2000 Р.</p>
-      <button name="More">Подробнее</button> <button name="Reserve">Забронировать</button>
-      <p>Рейтинг: 9,2</p></li>
+  <main class="wrapper">
+    <section class="main-search">
+      <h3 class="search-result">Найдено: 3</h3>
+      <h4 class="search-result-list">Сортировка:</h4>
+      <ul class="search-result-item">
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По рейтингу</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Список гостиниц</h3>
+      <ul>
+        <li><img src="#" alt="Фото гостиницы Amara Resort"><span class="main-hotels">Amara Resort & Spa</span>
+          <p class="main-hotels-price">Гостиница от 4000 Р.</p>
+          <button class="More"><span class="button-clic">Подробнее</span></button> <button class="Reserve"><span class="button-clic">Забронировать</span></button>
+          <p class="main-hotels-rating">Рейтинг: 8,5</p>
+        </li>
+        <li><img src="#" alt="Фото мотеля Desert Quail Inn"><span class="main-hotels">Desert Quail Inn</span>
+          <p class="main-hotels-price">Мотель от 3000 Р.</p>
+          <button class="More"><span class="button-clic">Подробнее</span></button> <button class="Reserve"><span class="button-clic">Забронировать</span></button>
+          <p class="main-hotels-rating">Рейтинг: 8,9</p>
+        </li>
+        <li><img src="#" alt="Фото апартаментов Villas at Poco Diablo"><span class="main-hotels">Villas at Poco Diablo</span>
+          <p class="main-hotels-price">Апартаменты от 2000 Р.</p>
+          <button class="More"><span class="button-clic">Подробнее</span></button> <button class="Reserve"><span class="button-clic">Забронировать</span></button>
+          <p class="main-hotels-rating">Рейтинг: 9,2</p>
+        </li>
 
-  </ul>
-</section>
+      </ul>
+    </section>
 
   </main>
 
-<footer>
-
-<section>
-    <h3>Контакты</h3>
-  <p>#VISITSEDONA</p>
-  <p><a href="tel:+74956660166">+7(495) 666-01-66</a></p>
-</section>
-
-<section>
-    <h3>Социальные сети</h3>
-  <ul>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">VK</a></li>
-  </ul>
-</section>
-
-
-  <p>website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logohtmlacademy" alt="Лого академии HTMLAcademy"></a></p>
-
-
-</footer>
-
-
+  <footer class="main-footer">
+    <section class="footer-contacts">
+      <h3>Контакты</h3>
+      <p class="hashtag">#visitsedona</p>
+      <p class="contacts-phone"><a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+    </section>
+    <section class="social-net">
+      <h3>Социальные сети</h3>
+      <ul class="social-list">
+        <li><a class="social-icon" href="#">Twitter</a></li>
+        <li><a class="social-icon" href="#">Facebook</a></li>
+        <li><a class="social-icon" href="#">VK</a></li>
+      </ul>
+    </section>
+    <p class="site-by">website by <a class="htmlacademy-logo-footer" href="https://htmlacademy.ru/intensive/htmlcss"><img src="logohtmlacademy" alt="Лого академии HTMLAcademy"></a></p>
+  </footer>
   </body>
-</html>
+
+  </html>

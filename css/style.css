@@ -8,6 +8,7 @@
   --double-low-black: #EEEEEE;
   --footer: rgba(255, 255, 255, 0.9);
   --blue-focus: #669EC0;
+  --basic-gray: #666666;
 }
 
 /* Global */
@@ -55,6 +56,7 @@ img {
 }
 
 /*Description*/
+
 .main-description {
   background-color: var(--basic-white);
 }
@@ -203,4 +205,58 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   text-align: right;
+}
+
+.search-result {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.search-result-list {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.search-result-item {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-hotels {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.main-hotels-price {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.More {
+  background-color: var(--light-blue)
+}
+
+.Reserve {
+  background-color: var(--special);
+}
+
+.button-clic {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.main-hotels-rating {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-gray);
 }
