@@ -1,0 +1,206 @@
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --low-black: #333333;
+  --basic-white: #ffffff;
+  --light-blue: #81B3D2;
+  --special: #766357;
+  --double-low-black: #EEEEEE;
+  --footer: rgba(255, 255, 255, 0.9);
+  --blue-focus: #669EC0;
+}
+
+/* Global */
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  /*  background-image: url("../img/bg.jpg");*/
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Navigation*/
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus background-color: var(--light blue);
+}
+
+/*Description*/
+.main-description {
+  background-color: var(--basic-white);
+}
+
+.description {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.motivs {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--low-black);
+}
+
+.list-production {
+  list-style: none;
+}
+
+.list-presentation {
+  list-style: none;
+}
+
+.real-sity {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.presentation-sity {
+  background-color: var(--light-blue);
+}
+
+.description-presentation {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.list-production {
+  background-color: var(--basic-white);
+}
+
+.commun-title {
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item-production {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--low-black);
+}
+
+.presentation-bridge {
+  background-color: var(--light-blue)
+}
+
+.bridge-of-devil {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.description-bridge-of-devil {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.presentation-leave {
+  background-color: var(--double-low-black);
+}
+
+.commun-advantage {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--low-black);
+}
+
+.date-select-item {
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-footer {
+  background-color: var(--footer);
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.contacts-phone a {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.social-list {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social-icon {
+  color: var(--light-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--blue-focus);
+}
+
+.site-by {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: right;
+}
