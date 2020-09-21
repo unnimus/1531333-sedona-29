@@ -22,7 +22,7 @@ body {
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.5;
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -41,9 +41,9 @@ img {
 .main-navigation {
   font-size: 14px;
   line-height: 1.8;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-black);
-  text-transform: uppercase;
   background-color: transparent;
   text-decoration: none;
 }
@@ -57,13 +57,17 @@ img {
   list-style: none;
 }
 
-
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: var(--light-blue);
 }
+
 .site-navigation a:active {
   color: var(--special-bum);
+}
+
+.current-hotels {
+  color: var(--special);
 }
 
 /*Description*/
@@ -74,6 +78,7 @@ img {
 .description {
   font-size: 21px;
   line-height: 1.2;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-black);
 }
@@ -96,6 +101,7 @@ img {
 .real-sity {
   font-size: 21px;
   line-height: 1;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-white);
 }
@@ -106,7 +112,6 @@ img {
 
 .description-presentation {
   font-size: 14px;
-  line-height: 1.5;
   text-align: center;
   color: var(--basic-white);
 }
@@ -118,12 +123,12 @@ img {
 .commun-title {
   font-size: 21px;
   line-height: 1;
+  font-weight: 700;
   text-align: center;
 }
 
 .item-production {
   font-size: 14px;
-  line-height: 1.5;
   text-align: center;
   color: var(--low-black);
 }
@@ -135,13 +140,13 @@ img {
 .bridge-of-devil {
   font-size: 21px;
   line-height: 1;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-white);
 }
 
 .description-bridge-of-devil {
   font-size: 14px;
-  line-height: 1.5;
   text-align: center;
   color: var(--basic-white);
 }
@@ -152,7 +157,6 @@ img {
 
 .commun-advantage {
   font-size: 14px;
-  line-height: 1.5;
   text-align: center;
   color: var(--low-black);
 }
@@ -160,6 +164,7 @@ img {
 .date-select-item {
   font-size: 30px;
   line-height: 0.8;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -170,11 +175,13 @@ img {
 .hashtag {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 }
 
 .contacts-phone a {
   font-size: 21px;
   line-height: 1.2;
+  font-weight: 700;
   text-decoration: none;
   color: inherit;
 }
@@ -209,64 +216,97 @@ img {
 .search-result {
   font-size: 21px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .search-result-list {
   font-size: 12px;
-  line-height: 1.5;
 }
 
 .search-result-item {
   font-size: 12px;
-  line-height: 1.5;
-  text-decoration: none;
   list-style: none;
 }
 
-.main-hotels {
+.item-details a {
+  color: var(--special-bum);
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  border-color: var(--light-blue);
+}
+
+.item-details-price {
+  color: var(--light-blue);
+}
+
+.item-details a:hover,
+.item-details a:focus {
+  color: var(--light-blue);
+  border-bottom: dotted;
+}
+
+.item-details a:active {
+  color: var(--basic-black);
+}
+
+.item-price {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.main-hotels a {
   font-size: 21px;
   line-height: 1.2;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.main-hotels a:hover,
+.main-hotels a:focus {
+  color: var(--light-blue);
+}
+
+.main-hotels a:active {
+  color: var(--special-bum);
 }
 
 .main-hotels-price {
   font-size: 14px;
-  line-height: 1.5;
 }
 
-.More:hover,
-.More:focus {
+.more:hover,
+.more:focus {
   background-color: var(--blue-focus);
 }
 
-.More:active {
+.more:active {
   background-color: var(--blue-raw-focus);
 }
 
-.More {
+.more {
   background-color: var(--light-blue);
 }
 
-.Reserve {
+.reserve {
   background-color: var(--special);
 }
 
-.Reserve:hover,
-.Reserve:focus {
+.reserve:hover,
+.reserve:focus {
   background-color: var(--special-low);
 }
 
-.Reserve:active {
+.reserve:active {
   background-color: var(--special-hard);
 }
 
 .button-clic {
   font-size: 14px;
-  line-height: 1.5;
   color: var(--basic-white);
 }
 
 .main-hotels-rating {
   font-size: 14px;
-  line-height: 1.5;
   color: var(--basic-gray);
 }
