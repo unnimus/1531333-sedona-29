@@ -231,8 +231,7 @@ img {
 .item-details a {
   color: var(--special-bum);
   text-decoration: none;
-  border-bottom: 1px dotted;
-  border-color: var(--light-blue);
+  border-bottom: 1px dotted var(--light-blue);
 }
 
 .item-details-price {
