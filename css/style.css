@@ -57,16 +57,16 @@ img {
   list-style: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
   color: var(--light-blue);
 }
 
-.site-navigation a:active {
+.site-navigation-item a:active {
   color: var(--special-bum);
 }
 
-.current-hotels {
+.site-navigation-item-active a {
   color: var(--special);
 }
 
@@ -234,18 +234,20 @@ img {
   border-bottom: 1px dotted var(--light-blue);
 }
 
-.item-details-price {
+.item-details-active a {
   color: var(--light-blue);
 }
 
 .item-details a:hover,
 .item-details a:focus {
   color: var(--light-blue);
-  border-bottom: dotted;
+  border-bottom: 1px dotted var(--light-blue);
 }
 
 .item-details a:active {
   color: var(--basic-black);
+  text-decoration: none;
+  border-style: none;
 }
 
 .item-price {
