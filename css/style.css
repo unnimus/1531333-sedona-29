@@ -52,14 +52,11 @@ img {
 .main-navigation a {
   text-decoration: none;
   color: var(--basic-black);
-
 }
 
 .site-navigation {
   list-style: none;
-
 }
-
 
 .site-navigation-item a:hover,
 .site-navigation-item a:focus {
@@ -87,7 +84,6 @@ img {
 .header-logo {
   justify-self: center;
 }
-
 
 /*Description*/
 .main-description {
@@ -118,32 +114,24 @@ img {
 }
 
 .real-sity {
-
   font-size: 21px;
   line-height: 1;
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
-
 }
-
 
 .wrapper {
- width: 1200px;
- margin: 0 auto;
- padding: 0 10px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-
-
 
 .sity-div {
   background-color: var(--light-blue);
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
-
-
-
 }
 
 .description-presentation {
@@ -169,15 +157,11 @@ img {
   padding: 0 70px;
 }
 
-
 .leave-div {
   background-color: var(--double-low-black);
 }
 
-
-
 .commun-title {
-
   font-size: 21px;
   line-height: 1;
   font-weight: 700;
@@ -194,8 +178,6 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: var(--light-blue);
-
-
 }
 
 .bridge-of-devil {
@@ -209,7 +191,6 @@ img {
 .description-bridge-of-devil {
   font-size: 14px;
   text-align: center;
-
   color: var(--basic-white);
 }
 
@@ -243,6 +224,7 @@ img {
   width: 320px;
   justify-self: center;
 }
+
 .hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -279,9 +261,11 @@ img {
 }
 
 .site-by {
+  max-width: 250px;
+  margin: 0;
+  justify-self: end;
   font-size: 14px;
   line-height: 1.8;
-  text-align: right;
 }
 
 .search-result {
