@@ -88,6 +88,7 @@ img {
 /*Description*/
 
 
+
 .main-description {
   background-color: var(--basic-white);
 }
@@ -97,7 +98,7 @@ img {
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  color: var(--basic-black);
+
 }
 
 .motivs {
@@ -109,11 +110,35 @@ img {
 
 .list-production {
   list-style: none;
+  display: grid;
+  border: 5px solid red;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.item-production {
+  font-size: 14px;
+  text-align: center;
+  color: var(--low-black);
 }
 
 .presentation {
   display: grid;
-  border: 5px solid green;
+}
+
+.presentation-sity {
+  background-color: var(--light-blue);
+  display: grid;
+  grid-column: 1/4;
+
+}
+
+.sity-div {
+  background-color: var(--light-blue);
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  width: 100%;
 
 }
 
@@ -121,7 +146,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3,auto);
   grid-template-rows: repeat(3,auto);
-  border: 5px solid yellow;
+    padding: 0;
 
 }
 
@@ -139,20 +164,12 @@ img {
   padding: 0 10px;
 }
 
-.sity-div {
-  background-color: var(--light-blue);
-  display: grid;
-  grid-column: 1/4;
-  grid-template-columns: 1fr 2fr;
-  margin: 0 auto;
-  width: 100%;
-  border: 5px solid red;
-}
 
 .description-presentation {
   font-size: 14px;
   color: var(--basic-white);
   text-align: center;
+
 }
 
 .list-production {
@@ -160,33 +177,15 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
-  padding: 0 10px;
-  border: 5px solid red;
+  text-align: center;
+  padding-top: 20px;
 }
 
-.presentation-leave-1 {
+.presentation-leave {
   background-color: var(--double-low-black);
-  margin: 0 auto;
-  grid-column: 1/2;
-  grid-row: 4;
-  border: 5px solid red;
+  list-style: none;
+    text-align: center;
   }
-
-.presentation-leave-2 {
-    background-color: var(--double-low-black);
-    margin: 0 auto;
-    grid-column: 2/3;
-    grid-row: 4;
-    border: 5px solid red;
-    }
-
-.presentation-leave-3 {
-      background-color: var(--double-low-black);
-      margin: 0 auto;
-      grid-column: 3/3;
-      grid-row: 4;
-      border: 5px solid red;
-      }
 
 
 .commun-title {
@@ -195,11 +194,7 @@ img {
   font-weight: 700;
   }
 
-.item-production {
-  font-size: 14px;
-  text-align: center;
-  color: var(--low-black);
-}
+
 
 .presentation-bridge {
   display: grid;
@@ -207,6 +202,7 @@ img {
   background-color: var(--light-blue);
   grid-column: 1/4;
   grid-row: 2/3;
+
 }
 
 .bridge-of-devil {
