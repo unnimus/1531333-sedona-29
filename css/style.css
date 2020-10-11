@@ -113,15 +113,14 @@ img {
 
 .presentation {
   display: grid;
-  grid-template-columns: repeat(3,auto);
-  grid-template-rows: repeat(4,auto);
   border: 5px solid green;
 
 }
 
 .list-presentation {
-  list-style: none;
   display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(3,auto);
   border: 5px solid yellow;
 
 }
