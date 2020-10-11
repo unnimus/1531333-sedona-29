@@ -78,7 +78,7 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
-  align-content: start;
+
 }
 
 .header-logo {
@@ -86,6 +86,8 @@ img {
 }
 
 /*Description*/
+
+
 .main-description {
   background-color: var(--basic-white);
 }
@@ -109,16 +111,27 @@ img {
   list-style: none;
 }
 
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(4,auto);
+  border: 5px solid green;
+
+}
+
 .list-presentation {
   list-style: none;
+  display: grid;
+  border: 5px solid yellow;
+
 }
 
 .real-sity {
   font-size: 21px;
   line-height: 1;
   font-weight: 700;
-  text-align: center;
   color: var(--basic-white);
+
 }
 
 .wrapper {
@@ -130,8 +143,11 @@ img {
 .sity-div {
   background-color: var(--light-blue);
   display: grid;
+  grid-column: 1/4;
   grid-template-columns: 1fr 2fr;
   margin: 0 auto;
+  width: 100%;
+  border: 5px solid red;
 }
 
 .description-presentation {
@@ -146,27 +162,39 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   padding: 0 10px;
+  border: 5px solid red;
 }
 
-.presentation-leave {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  display: inline-block;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0 70px;
-}
-
-.leave-div {
+.presentation-leave-1 {
   background-color: var(--double-low-black);
-}
+  margin: 0 auto;
+  grid-column: 1/2;
+  grid-row: 4;
+  border: 5px solid red;
+  }
+
+.presentation-leave-2 {
+    background-color: var(--double-low-black);
+    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 4;
+    border: 5px solid red;
+    }
+
+.presentation-leave-3 {
+      background-color: var(--double-low-black);
+      margin: 0 auto;
+      grid-column: 3/3;
+      grid-row: 4;
+      border: 5px solid red;
+      }
+
 
 .commun-title {
   font-size: 21px;
   line-height: 1;
   font-weight: 700;
-  text-align: center;
-}
+  }
 
 .item-production {
   font-size: 14px;
@@ -178,6 +206,8 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: var(--light-blue);
+  grid-column: 1/4;
+  grid-row: 2/3;
 }
 
 .bridge-of-devil {
@@ -188,15 +218,13 @@ img {
   color: var(--basic-white);
 }
 
+
 .description-bridge-of-devil {
   font-size: 14px;
   text-align: center;
   color: var(--basic-white);
 }
 
-.presentation-leave {
-  background-color: var(--double-low-black);
-}
 
 .commun-advantage {
   font-size: 14px;
