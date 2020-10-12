@@ -164,6 +164,7 @@ img {
   display: grid;
   grid-column: 1/2;
   grid-row: 1/2;
+  text-align: center;
 }
 
 .imgtest {}
