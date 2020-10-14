@@ -10,7 +10,7 @@
   --double-low-black: #EEEEEE;
   --footer: rgba(255, 255, 255, 0.9);
   --special-bum: rgba(0, 0, 0, 0.3);
-  --blue-focus: #669EC0;
+  --blue-focus: #669EC0;в
   --basic-gray: #666666;
   --blue-raw-focus: #5496BD;
   --gray-back: #F2F2F2;
@@ -47,8 +47,8 @@ img {
 }
 
 
-.container {
-
+.wrapper {
+  background-color: var(--basic-white);
 }
 
 /*Navigation*/
@@ -173,7 +173,7 @@ img {
   text-align: center;
 }
 
-.imgtest {}
+
 
 .presentation-leave {
   background-color: var(--double-low-black);
@@ -283,10 +283,16 @@ img {
   line-height: 1.8;
 }
 
+.container-search {
+  display: grid;
+  grid-template-columns: repeat(3,max-content);
+}
+
 .search-result {
   font-size: 21px;
   line-height: 1.2;
   font-weight: 700;
+  padding-right: 46px;
 }
 
 .search-result-list {
@@ -296,6 +302,9 @@ img {
 .search-result-item {
   font-size: 12px;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .item-details a {
@@ -325,6 +334,7 @@ img {
   text-decoration: none;
 }
 
+
 .main-hotels a {
   font-size: 21px;
   line-height: 1.2;
@@ -344,8 +354,35 @@ img {
 
 .main-hotels-price {
   font-size: 14px;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
+.price-list {
+  font-size: 14px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.main-hotels {
+  grid-column: 2/5;
+  grid-row: 1/3;
+}
+
+.hotel-amara {
+display: grid;
+grid-template-columns: 135px max-content 1fr ;
+}
+
+.hotels-photo {
+  list-style: none;
+  padding: 0;
+}
+
+.main-hotels-rating {
+  grid-column: -1;
+
+}
 .more:hover,
 .more:focus {
   background-color: var(--blue-focus);
@@ -357,11 +394,21 @@ img {
 
 .more {
   background-color: var(--light-blue);
+  color: var(--basic-white);
+  grid-column: 2/3;
+  width: 110px;
+  height: 27px;
+  margin-right: 6px;
 }
 
 .reserve {
   background-color: var(--special);
-}
+  color: var(--basic-white);
+  width: 110px;
+  height: 27px;
+  grid-column: 3;
+  }
+
 
 .reserve:hover,
 .reserve:focus {
@@ -372,19 +419,16 @@ img {
   background-color: var(--special-hard);
 }
 
-.button-clic {
-  font-size: 14px;
-  color: var(--basic-white);
-}
+
 
 .main-hotels-rating {
   font-size: 14px;
   color: var(--basic-gray);
+  grid-column: -1;
 }
 
-.hotels-photo {
-  list-style: none;
-}
+
+
 
 .main-map {
   text-align: center;
