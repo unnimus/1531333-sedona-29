@@ -400,7 +400,7 @@ img {
 
 .hotel-commun {
   display: grid;
-  grid-template-columns: 135px max-content 1fr;
+  grid-template-columns: 135px max-content 1fr 1fr;
   padding-left: 73px;
   border-bottom: 1px solid var(--ligne-color);
   border-top: 1px solid var(--ligne-color);
@@ -421,7 +421,7 @@ img {
   grid-column: -1;
   font-size: 14px;
   color: var(--basic-gray);
-  grid-column: -1;
+
   padding-right: 85px;
 }
 
