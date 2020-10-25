@@ -79,7 +79,6 @@ img {
 
 .site-navigation-item:nth-child(3) {
   text-align: right;
-
 }
 
 .site-navigation-item:nth-child(4) {
@@ -170,7 +169,8 @@ img {
   display: flex;
   position: absolute;
   justify-content: center;
-  margin-left: 531px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*Description*/
@@ -305,7 +305,6 @@ img {
 
 .main-footer {
   padding: 30px 0;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.9);
@@ -562,5 +561,4 @@ img {
 
 .main-map {
   text-align: center;
-
 }
