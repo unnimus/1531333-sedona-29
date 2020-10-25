@@ -66,23 +66,31 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
-  width: auto;
+  margin: 0;
   padding-left: 72px;
   padding-right: 72px;
-  margin: 0;
+
 }
 
 .site-navigation-item {
   width: 25%;
 }
 
+
 .site-navigation-item:nth-child(3) {
   text-align: right;
+
 }
 
 .site-navigation-item:nth-child(4) {
   text-align: right;
+
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /**
@@ -163,12 +171,6 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
-}
-
-.header-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /*Description*/
