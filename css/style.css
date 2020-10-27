@@ -163,9 +163,7 @@ img {
   color: var(--special);
 }
 
-.page {
-  height: 100%;
-}
+
 
 .page-body {
   min-height: 100%;
