@@ -59,6 +59,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-decoration: none;
+  padding-bottom: 15px;
 }
 
 .main-navigation a {
@@ -95,6 +96,25 @@ img {
   transform: translateX(-50%);
 }
 
+.welcome {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 17%;
+
+}
+
+.shape {
+  position: absolute;
+  top: 65.5%;
+
+}
+
+.photo-sedona {
+
+  background-color: var(--basic-white);
+}
+
 
 .site-navigation-item a:hover,
 .site-navigation-item a:focus {
@@ -114,6 +134,7 @@ img {
 
 .main-description {
   background-color: var(--basic-white);
+  padding-top: 18px;
 }
 
 .description {
@@ -121,7 +142,7 @@ img {
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .motivs {
@@ -129,7 +150,7 @@ img {
   line-height: 1.8;
   text-align: center;
   color: var(--low-black);
-  padding-bottom: 51px;
+  padding-top: 2px;
 }
 
 .list-production {
@@ -142,10 +163,33 @@ img {
   padding-bottom: 82px;
 }
 
+.test {
+
+}
 .item-production {
   font-size: 14px;
   text-align: center;
   color: var(--low-black);
+
+}
+.house {
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.food {
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+
+}
+
+.souvenirs {
+
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .presentation-sity {
@@ -153,6 +197,7 @@ img {
   display: grid;
   grid-column: 1/4;
   grid-template-columns: 1fr 2fr;
+  margin-top: 38.4px;
 }
 
 
@@ -168,6 +213,7 @@ img {
   line-height: 1;
   font-weight: 700;
   color: var(--basic-white);
+  padding-top: 35px;
 }
 
 .description-presentation {
@@ -177,8 +223,14 @@ img {
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: center;
+  padding-bottom: 28px;
 }
-
+.item-production .test {
+  background-image: url(img/image-canyon.jpg);
+}
+.number {
+  padding-bottom: 7px;
+}
 .presentation-leave {
   background-color: var(--double-low-black);
   list-style: none;
