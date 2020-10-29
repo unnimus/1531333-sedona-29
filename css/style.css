@@ -104,14 +104,13 @@ img {
 
 }
 
-.shape {
-  position: absolute;
-  top: 67.5%;
-
+.main-header.photo {
+  background-image: url(../img/background photo.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .photo-sedona {
-
   background-color: var(--basic-white);
 }
 
@@ -159,27 +158,29 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1/4;
-  padding-top: 160px;
+  padding-top: 52px;
   padding-bottom: 82px;
 }
 
-.test {
-
-}
 .item-production {
   font-size: 14px;
   text-align: center;
   color: var(--low-black);
+  padding-top: 100px;
+
+
+/** Стили списка с занятиями**/
 
 }
 .house {
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top ;
+
 }
 
 .food {
-  background-image: url(../img/icon-2.svg);
+  background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   background-position: top;
 
@@ -187,7 +188,7 @@ img {
 
 .souvenirs {
 
-  background-image: url(../img/icon-3.svg);
+  background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -197,7 +198,7 @@ img {
   display: grid;
   grid-column: 1/4;
   grid-template-columns: 1fr 2fr;
-  margin-top: 38.4px;
+  margin-top: 40px;
 }
 
 
@@ -228,9 +229,17 @@ img {
 .item-production .test {
   background-image: url(img/image-canyon.jpg);
 }
-.number {
+
+.number-1 {
   padding-bottom: 7px;
 }
+
+.number-2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+}
+
 .presentation-leave {
   background-color: var(--double-low-black);
   list-style: none;
@@ -243,6 +252,8 @@ img {
   font-size: 21px;
   line-height: 1;
   font-weight: 700;
+
+
 }
 
 .presentation-bridge {
@@ -251,6 +262,7 @@ img {
   background-color: var(--light-blue);
   grid-column: 1/4;
   grid-row: 2/3;
+
 }
 
 .bridge-of-devil {
@@ -259,12 +271,17 @@ img {
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
+  margin-bottom: 30px;
+
+
 }
 
 .description-bridge-of-devil {
   font-size: 14px;
   text-align: center;
   color: var(--basic-white);
+  padding-top: 50px;
+
 }
 
 .commun-advantage {
