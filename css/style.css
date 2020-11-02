@@ -330,6 +330,7 @@ img {
   outline: 1px solid red;
 
 
+
 }
 
 /**
@@ -366,7 +367,7 @@ img {
 
 
 }
-.test {
+.hashtag {
   padding-bottom: 9px;
 }
 .contacts-details a {
@@ -381,16 +382,15 @@ img {
 
 .social-container {
   display: flex;
-  width: max-content;
+  flex-wrap: wrap;
+  width: 200px;
+
   justify-content: center;
+  text-align: center;
   list-style: none;
-  padding-right: 10px;
-  margin-left: 122px;
-  padding-top: 5px;
-  padding-left: 0;
+  padding: 6px;
   outline: 1px solid red;
-
-
+  margin: auto;
 }
 
 .social-icon {
