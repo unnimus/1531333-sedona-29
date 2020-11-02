@@ -311,8 +311,8 @@ img {
 
 .main-footer {
   position: absolute;
-  padding-top: 19px;
-  padding-bottom: 25px;
+  padding-top: 27px;
+  padding-bottom: 31px;
   width: 100%;
   bottom: 0;
   display: grid;
@@ -320,18 +320,9 @@ img {
   background-color: rgba(255, 255, 255, 0.9);
   outline: 1px solid red;
 
-
-
 }
 
-.footer-contacts {
-  text-align: center;
-  padding-left: 77px;
-  outline: 1px solid red;
 
-
-
-}
 
 /**
 .hashtag {
@@ -357,11 +348,12 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  width: 300px;
   list-style: none;
   text-decoration: none;
   text-align: center;
   margin: 0;
-  padding-left: 0;
+  padding-left: 86px;
   padding-right: 5px;
   outline: 1px solid red;
 
@@ -384,11 +376,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-
   justify-content: center;
   text-align: center;
   list-style: none;
-  padding: 6px;
+  padding: 11px;
   outline: 1px solid red;
   margin: auto;
 }
@@ -430,6 +421,7 @@ img {
   font-size: 14px;
   line-height: 1.8;
   padding-right: 15px;
+  width: 250px;
   margin-left: 65px;
   padding-top: 2px;
   outline: 1px solid red;
