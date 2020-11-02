@@ -311,12 +311,14 @@ img {
 
 .main-footer {
   position: absolute;
+  padding-top: 34px;
   width: 100%;
-  bottom: 6px;
-  height: 120px;
+  bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.9);
+
+
 }
 
 .footer-contacts {
@@ -324,8 +326,11 @@ img {
   width: 320px;
   text-align: center;
   padding-left: 77px;
-}
 
+
+
+}
+/**
 .hashtag {
   font-size: 21px;
   font-weight: 700;
@@ -344,33 +349,44 @@ img {
   padding-top: 5px;
   margin-top: 0;
 }
+**/
+.contacts-details  {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+}
+
+.contacts-details a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   text-decoration: none;
 }
 
-.social-list {
+.social-container {
+  display: flex;
+  width: max-content;
+  justify-content: center;
   list-style: none;
-  text-decoration: none;
-  text-align: center;
-  margin: 0;
-}
-
-.social-net {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 122px;
-  padding-top: 10px;
+  padding-right: 10px;
+  margin-left: 82px;
+  margin-top: 0px;
 }
 
 .social-icon {
+  display: flex;
   text-decoration: none;
-  background-position: center;
   width: 46px;
   height: 48px;
   padding-right: 6px;
-  padding-top: 23px;
+
 }
 
 .Twitter {
@@ -399,19 +415,17 @@ img {
 .site-by {
   font-size: 14px;
   line-height: 1.8;
-  padding-right: 10px;
-  padding-top: 7px;
+  padding-right: 15px;
+  margin-top: 0;
+  padding-top: 5px;
+  margin-left: 65px;
+
 }
 
-.creation {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  padding-top: 27px;
-  padding-left: 64px;
-}
 
 .photo-logo-footer {
-  padding-top: 10px;
+  vertical-align: middle;
+  padding-left: 5px;
 }
 
 /**Стили для HOTELS **/
