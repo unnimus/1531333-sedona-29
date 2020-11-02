@@ -25,13 +25,13 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--basic-black);
-  /*  background-image: url("../img/bg.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
   text-transform: uppercase;
 }
 
 .container {
+  position: relative;
   background-color: var(--gray-back);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: auto;
@@ -48,6 +48,7 @@ img {
 
 .wrapper {
   background-color: var(--basic-white);
+  padding-top: 5px;
 }
 
 /*Navigation*/
@@ -95,29 +96,16 @@ img {
   transform: translateX(-50%);
 }
 
-.welcome {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 17%;
-}
-
-.photo {
-  background-image: url(../img/welcome.svg), url(../img/background-home.jpg);
-  width: 1200px;
+.header-welcome {
+  background-image: url(../img/bottom.svg), url(../img/background-home.jpg);
   height: 509px;
   background-repeat: no-repeat;
-  background-position: center bottom 16%, bottom;
+  background-position: center bottom, center;
 }
 
-.shape {
-  background-image: url(../img/bottom.svg);
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 1200px;
-  top: 32%;
-  position: absolute;
-  background-position: bottom;
+.header-welcome-photo {
+  position: relative;
+  transform: translate(81%, 22%);
 }
 
 .photo-sedona {
@@ -159,47 +147,57 @@ img {
   padding-top: 2px;
 }
 
+/** Общие стли всего списка на странице**/
 .list-production {
   background-color: var(--basic-white);
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1/4;
-  padding-top: 52px;
-  padding-bottom: 82px;
+  padding-top: 60px;
+  padding-bottom: 69px;
+  padding-left: 0;
 }
 
+/** Стили списка с занятиями**/
 .item-production {
   font-size: 14px;
   text-align: center;
   color: var(--low-black);
   padding-top: 100px;
-  /** Стили списка с занятиями**/
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 .house {
   background-image: url(../img/icon-1.svg);
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .food {
   background-image: url(../img/icon-3.svg);
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .souvenirs {
   background-image: url(../img/icon-2.svg);
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .list-presentation {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   padding: 0;
+}
+
+.commun-title {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.list-production-description {
+  padding-top: 11px;
 }
 
 /** 1 ПРИЧИНА - НАСТОЯЩИЙ ГОРОДОК **/
@@ -225,7 +223,7 @@ img {
 }
 
 .number-1 {
-  padding-top: 120px;
+  padding-top: 115px;
 }
 
 .live {
@@ -257,7 +255,7 @@ img {
 }
 
 .number-2 {
-  padding-top: 100px;
+  padding-top: 117px;
 }
 
 .go {
@@ -270,7 +268,7 @@ img {
   font-weight: 700;
   text-align: center;
   color: var(--basic-white);
-  padding-top: 40px;
+  padding-top: 49px;
 }
 
 .description-bridge-of-devil {
@@ -285,36 +283,37 @@ img {
   list-style: none;
   text-align: center;
   padding-top: 47px;
-  padding-bottom: 54px;
+  padding-bottom: 40px;
 }
 
-.commun-title {
-  font-size: 21px;
-  line-height: 1;
-  font-weight: 700;
-}
-
-.commun-advantage {
-  font-size: 14px;
-  text-align: center;
-  color: var(--low-black);
+.number-345 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .date-select {
   background-color: var(--basic-white);
-  padding-top: 58px;
-  padding-bottom: 78px;
+  padding-top: 18px;
+  margin-bottom: 130px;
+  text-align: center;
 }
 
 .date-select-item {
   font-size: 30px;
   line-height: 0.8;
   font-weight: 700;
-  text-align: center;
+  padding-bottom: 7px;
+}
+
+.date-select-description {
+  line-height: 1.8;
 }
 
 .main-footer {
-  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 6px;
+  height: 120px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.9);
@@ -324,12 +323,13 @@ img {
   margin: 0;
   width: 320px;
   text-align: center;
+  padding-left: 77px;
 }
 
 .hashtag {
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .contacts-phone a {
@@ -338,6 +338,11 @@ img {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+}
+
+.contacts-phone {
+  padding-top: 5px;
+  margin-top: 0;
 }
 
 .footer-contacts a:hover,
@@ -355,16 +360,17 @@ img {
 .social-net {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 100px;
+  padding-left: 122px;
+  padding-top: 10px;
 }
 
 .social-icon {
   text-decoration: none;
-  background-image: ;
   background-position: center;
   width: 46px;
   height: 48px;
-  padding-right: 8px;
+  padding-right: 6px;
+  padding-top: 23px;
 }
 
 .Twitter {
@@ -391,11 +397,21 @@ img {
 }
 
 .site-by {
-  max-width: 250px;
-  margin: 0;
-  justify-self: end;
   font-size: 14px;
   line-height: 1.8;
+  padding-right: 10px;
+  padding-top: 7px;
+}
+
+.creation {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  padding-top: 27px;
+  padding-left: 64px;
+}
+
+.photo-logo-footer {
+  padding-top: 10px;
 }
 
 /**Стили для HOTELS **/
@@ -501,14 +517,6 @@ img {
 
 .star diablo {}
 
-/*
-.hr {
-  color: var(--blue-raw-focus);
-  background-color: var(--blue-raw-focus);
-  border: none;
-  height: 5px;
-}
-*/
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
