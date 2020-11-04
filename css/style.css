@@ -482,12 +482,12 @@ img {
   padding-left: 5px;
 }
 
-.photo-logo-footer a:hover,
-.photo-logo-footer a:focus {
+.htmlacademy-logo-footer a:hover,
+.htmlacademy-logo-footer a:focus {
   fill: var(--light-blue);
 }
 
-.photo-logo-footer a:hover {
+.htmlacademy-logo-footer a:hover {
   fill: red;
 }
 
