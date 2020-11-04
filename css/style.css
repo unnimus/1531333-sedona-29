@@ -317,7 +317,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.9);
-  outline: 1px solid red;
 }
 
 
@@ -352,7 +351,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+
 
 
 }
@@ -380,7 +379,6 @@ img {
   text-align: center;
   list-style: none;
   padding: 0;
-  outline: 1px solid red;
   margin: auto;
   margin: 16px;
 
@@ -389,31 +387,45 @@ img {
 
 .social-icon {
   display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
+  background-color: var(--light-blue);
+  background-repeat: no-repeat;
   width: 46px;
   height: 48px;
-  padding-right:  6px;
+  margin-right:  6px;
 
+}
 
+.social-icon a:hover,
+.social-icon a:focus {
+  color: var(--blue-focus);
+}
 
+.social-icon a:active {
+  color: var(--blue-raw-focus);
 }
 
 .Twitter {
-  background-image: url(../img/twitter.svg), url(../img/rectangle.svg);
+  background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
   background-position: center;
+
+
 }
 
 .Facebook {
-  background-image: url(../img/fb-icon.svg), url(../img/rectangle.svg);
+  background-image: url(../img/fb-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .YouTube {
-  background-image: url(../img/youtube.svg), url(../img/rectangle.svg);
+  background-image: url(../img/youtube.svg);
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .social-button:hover,
@@ -428,12 +440,11 @@ img {
   margin: 0;
   padding: 15px;
   text-align: center;
-  outline: 1px solid red;
+
 }
 
 .section-center {
   margin: auto;
-  background-color: var(--blue-focus);
   text-align: center;
   width: max-content;
   height: max-content;
@@ -446,7 +457,6 @@ img {
   margin: auto;
   margin-top: 0;
   margin-left: 86px;
-  background-color: var(--blue-focus);
   text-align: center;
   width: max-content;
   height: max-content;
@@ -459,7 +469,7 @@ img {
   margin: 0;
   margin-left: 29px;
   margin-top: 3px;
-  background-color: var(--blue-focus);
+
   text-align: center;
   width: max-content;
   height: max-content;
@@ -563,15 +573,24 @@ img {
   grid-column: 5;
   grid-row: 1;
   color: var(--light-blue);
+  background-image: url(../img/star.svg);
+  background-repeat: space;
 }
 
-.star amara {
+.amara {
   box-sizing: content-box;
+  width: 110px;
 }
 
-.star desert {}
+.desert {
 
-.star diablo {}
+  width: 110px;
+}
+
+.diablo {
+
+  width: 110px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -678,4 +697,21 @@ img {
 
 .main-map {
   text-align: center;
+}
+
+
+.search-button {
+  display: block;
+  margin: auto;
+  width: 568px;
+  background-color: var(--special);
+  border: none;
+  text-transform: inherit;
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 0;
+
 }
