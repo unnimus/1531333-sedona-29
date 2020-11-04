@@ -399,11 +399,11 @@ img {
 
 .social-icon a:hover,
 .social-icon a:focus {
-  color: var(--blue-focus);
+  background-color: var(--blue-focus);
 }
 
 .social-icon a:active {
-  color: var(--blue-raw-focus);
+  background-color: var(--blue-raw-focus);
 }
 
 .Twitter {
@@ -476,16 +476,18 @@ img {
 
 }
 .photo-logo-footer {
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
   vertical-align: middle;
   padding-left: 5px;
 }
 
-.htmlacademy-logo-footer a:hover,
-.htmlacademy-logo-footer a:focus {
+.photo-logo-footer a:hover,
+.photo-logo-footer a:focus {
   fill: var(--light-blue);
 }
 
-.htmlacademy-logo-footer a:hover {
+.photo-logo-footer a:hover {
   fill: red;
 }
 
