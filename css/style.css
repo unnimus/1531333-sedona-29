@@ -377,6 +377,7 @@ img {
   width: 200px;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
   list-style: none;
   padding: 0;
   margin: auto;
@@ -385,49 +386,50 @@ img {
 
 }
 
-.social-icon {
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
+.social-icon::before {
+  display: inline-block;
   background-color: var(--light-blue);
   background-repeat: no-repeat;
+  background-position: center;
+  content:"";
   width: 46px;
   height: 48px;
   margin-right:  6px;
-
 }
 
-.social-icon a:hover,
-.social-icon a:focus {
+
+ .twitter::before {
+  background-image: url(../img/twitter.svg);
+ }
+ .twitter:hover:before {
+   background-color: var(--blue-focus);
+ }
+ .twitter:active:before {
+   background-color: var(--blue-focus);
+   opacity: .3;
+ }
+
+.facebook::before {
+  background-image: url(../img/fb-icon.svg);
+}
+
+.facebook:hover:before  {
   background-color: var(--blue-focus);
 }
-
-.social-icon a:active {
-  background-color: var(--blue-raw-focus);
+.facebook:active:before {
+  background-color: var(--blue-focus);
+  opacity: .3;
 }
-
-.Twitter {
-  background-image: url(../img/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-
-}
-
-.Facebook {
-  background-image: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-
-.YouTube {
+.youtube::before {
   background-image: url(../img/youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-
 }
-
+.youtube:hover:before {
+  background-color: var(--blue-focus);
+}
+.youtube:active:before {
+  background-color: var(--blue-focus);
+  opacity: .3;
+}
 .social-button:hover,
 .social-button:focus {
   background-color: var(--blue-focus);
@@ -469,7 +471,6 @@ img {
   margin: 0;
   margin-left: 29px;
   margin-top: 3px;
-
   text-align: center;
   width: max-content;
   height: max-content;
@@ -491,6 +492,11 @@ img {
   fill: red;
 }
 
+.htmlacademy-logo-footer {
+width: 150px;
+height: 41px;
+
+}
 /**Стили для HOTELS **/
 .container-search {
   display: flex;
