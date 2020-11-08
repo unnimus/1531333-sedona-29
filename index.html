@@ -111,6 +111,38 @@
       </section>
 
         <button class="search-button" value="поиск гостиницы в седоне">поиск гостиницы в седоне</button>
+        <div class="form-search">
+        <form action="https://echo.htmlacademy.ru/" method="get" class="form">
+        <p class="search-in">
+        <label for="date-in" class="label-in">Дата заезда:</label>
+        <input class="input-general input-date-1"type="text" name="form-date-in" value="24 апреля 2017" id="date-in">
+        <button type="button" name="button-1" class="button-form button-form-1"><span class="visually-hidden">Выбор даты заезда</span></button>
+        </p>
+        <p class="search-in">
+        <label for="date-in-2" class="label-in">Дата выезда:</label>
+        <input class="input-general input-date-1"type="text" name="form-date-in" value="4 июля 2017" id="date-in-2">
+        <button type="button" name="button-1" class="button-form button-form-1"><span class="visually-hidden">Выбор даты выезда</span></button>
+        </p>
+
+
+        <div class="form-guest">
+          <p class="search-in">
+            <label for="guest-1" class="label-in-bottom">Взрослые:</label>
+            <button type="button" name="button" class="button-form button-display-1"><span class="visually-hidden">-1</span></button>
+            <input class="input-general input-min" type="number" name="guest" value="2" id="guest-1" min="1" max="10">
+            <button type="button" name="button" class="button-form button-display-2"><span class="visually-hidden">+1</span></button>
+          </p>
+          <p class="search-in">
+            <label for="guest-1" class="label-in-bottom seconde">Дети:</label>
+            <button type="button" name="button" class="button-form button-display-1"><span class="visually-hidden">-1</span></button>
+            <input class="input-general input-min" type="number" name="guest" value="2" id="guest-1" min="1" max="10">
+            <button type="button" name="button" class="button-form button-display-2"><span class="visually-hidden">+1</span></button>
+          </p>
+        </div>
+        <button type="submit" name="button" class="send">найти</button>
+        </form>
+        </div>
+
 
       <section class="main-map">
         <h3 class="visually-hidden">Карта</h3>
